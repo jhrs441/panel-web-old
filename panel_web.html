@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Web</title>
+    <link rel="stylesheet" href="pw.css">
+</head>
+<body>
+    <div class="top-bar">
+        <form>
+            <label for="Titulo">Area:</label>
+            <select id="areas" name="areas" onchange="checkOption()">
+                <option value="Callcenter">Callcenter</option>
+                <option value="Afiliaciones y cartera">Afiliaciones y cartera</option>
+                <option value="Atencion al afiliado">Atencion al afiliado</option>
+                <option value="Contabilidad">Contabilidad</option>
+                <option value="mas">agregar area +</option>
+            </select>
+        </form>
+    </div>
+    <script src="pw.js"></script>
+</body>
+</html>

@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call Center</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+    <div id="modal_visor_grande" class="overlay" >
+        <H1 id="titulo_visor_grande" style="color: #ffffff; position: fixed; z-index: 996; top: 0; left: 0; margin: 10px;">EQ--</H1>
+
+        <span class="close" style="position: fixed; z-index: 997; top: 0; right: 0; margin: 10px; " onclick="closeModal()" title="Cancelar">&times;</span>
+
+        <div id="a_imagen" data-ip=""  style="display: flex; align-items: center; justify-content: center;">
+            <img id="imagen_pantalla_grande" data-ip="" src="img_equipo/null.png" alt="" class="" style="border-radius: 8px; width: 75%; height: 75%; background-color: #00000074;">
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div>
+        <div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+            </div>
+            <!-- ISLA 5 -->
+            <div class="fila">
+                <div class="libre"></div>
+                <div id="EQ45" data-estado="0" onclick="abrirCubiculo(45,'EQ45')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ45</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ44" data-estado="0" onclick="abrirCubiculo(44,'EQ44')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ44</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ43" data-estado="0" onclick="abrirCubiculo(43,'EQ43')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ43</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ43" data-estado="0" onclick="abrirCubiculo(42,'EQ42')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ42</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ43" data-estado="0" onclick="abrirCubiculo(41,'EQ41')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ41</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div id="EQ40" data-estado="1" data-mac="40:B0:34:3D:8F:BC" onclick="abrirCubiculo(40,'EQ40')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ40</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ39" data-estado="1" data-mac="40:B0:34:1C:F4:2B" onclick="abrirCubiculo(39,'EQ39')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ39</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ38" data-estado="1" data-mac="40:B0:34:3C:8F:8C" onclick="abrirCubiculo(38,'EQ38')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ38</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ37" data-estado="1" data-mac="D0:27:88:8A:9A:5E" onclick="abrirCubiculo(37,'EQ37')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ37</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ36" data-estado="1" data-mac="C8:D3:FF:B7:26:FA" onclick="abrirCubiculo(36,'EQ36')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ36</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+            </div>
+            <!-- FIN ISLA 5 -->
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="libre"></div>
+            </div>
+
+            <div class="fila">
+                <div class="libre"></div>
+                <div id="EQ35" data-estado="1" data-mac="C8:D3:FF:B7:26:FE" onclick="abrirCubiculo(35,'EQ35')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ35</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ34" data-estado="1" data-mac="40:B0:34:1C:EF:F6" onclick="abrirCubiculo(34,'EQ34')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ34</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ33" data-estado="1" data-mac="40:B0:34:1C:EA:31" onclick="abrirCubiculo(33,'EQ33')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ33</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ32" data-estado="1" data-mac="4C:CC:6A:17:BF:8B" onclick="abrirCubiculo(32,'EQ32')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ32</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ31" data-estado="1" data-mac="40:B0:34:3D:99:88" onclick="abrirCubiculo(31,'EQ31')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ31</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div id="EQ85" data-estado="0" onclick="abrirCubiculo(85,'EQ85')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ85</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ84" data-estado="0" onclick="abrirCubiculo(54,'EQ84')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ84</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ83" data-estado="0" onclick="abrirCubiculo(53,'EQ83')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ83</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ82" data-estado="0" onclick="abrirCubiculo(82,'EQ82')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ82</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ81" data-estado="0" onclick="abrirCubiculo(81,'EQ81')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ81</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+
+
+
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div id="EQ30" data-estado="1" onclick="abrirCubiculo(30,'EQ30')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ30</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ29" data-estado="1" onclick="abrirCubiculo(29,'EQ29')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ29</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ28" data-estado="1" onclick="abrirCubiculo(28,'EQ28')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ28</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ27" data-estado="1" onclick="abrirCubiculo(27,'EQ27')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ27</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ26" data-estado="1" data-mac="C0:3F:D5:7B:B4:31" onclick="abrirCubiculo(26,'EQ26')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ26</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div id="EQ80" data-estado="1" data-mac="40:B0:34:1C:EE:E5" onclick="abrirCubiculo(80,'EQ80')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ80</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ79" data-estado="1" data-mac="D0:27:88:8A:AD:EE" onclick="abrirCubiculo(79,'EQ79')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ79</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ78" data-estado="1" data-mac="D8:CB:8A:06:DB:44" onclick="abrirCubiculo(78,'EQ78')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ78</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ77" data-estado="1" data-mac="40:B0:34:3D:93:9C" onclick="abrirCubiculo(77,'EQ77')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ77</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ76" data-estado="1" data-mac="DC:FE:07:D4:8A:5E" onclick="abrirCubiculo(76,'EQ76')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ76</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+            </div>
+
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div id="EQ25" data-estado="1" data-mac="4C:CC:6A:17:BF:5B" onclick="abrirCubiculo(25,'EQ25')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ25</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ24" data-estado="1" onclick="abrirCubiculo(24,'EQ24')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ24</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ23" data-estado="1" data-mac="DC:FE:07:D4:89:37" onclick="abrirCubiculo(23,'EQ23')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ23</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ22" data-estado="1" data-mac="40:B0:34:1C:EE:03" onclick="abrirCubiculo(22,'EQ22')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ22</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ21" data-estado="1" data-mac="4C:CC:6A:17:BF:7B" onclick="abrirCubiculo(21,'EQ21')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ21</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div id="EQ75" data-estado="1" onclick="abrirCubiculo(75,'EQ75')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ75</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ74" data-estado="1" onclick="abrirCubiculo(74,'EQ74')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ74</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ73" data-estado="1" data-mac="90:FB:A6:7C:4B:B7" onclick="abrirCubiculo(73,'EQ73')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ73</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ72" data-estado="1" onclick="abrirCubiculo(72,'EQ72')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ72</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ71" data-estado="1" data-mac="C0:3F:D5:7C:5B:E5" onclick="abrirCubiculo(71,'EQ71')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ71</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div id="EQ20" data-estado="1" onclick="abrirCubiculo(20,'EQ20')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ20</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ19" data-estado="1" onclick="abrirCubiculo(19,'EQ19')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ19</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ18" data-estado="1" onclick="abrirCubiculo(18,'EQ18')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ18</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ17" data-estado="1" onclick="abrirCubiculo(17,'EQ17')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ17</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ16" data-estado="1"  data-mac="D0:27:88:8A:AE:7E" onclick="abrirCubiculo(16,'EQ16')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ16</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div id="EQ70" data-estado="1" data-mac="DC:FE:07:D4:19:39" onclick="abrirCubiculo(70,'EQ70')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ70</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ69" data-estado="1" data-mac="DC:FE:07:D4:8C:AB" onclick="abrirCubiculo(69,'EQ69')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ69</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ68" data-estado="1" data-mac="C0:3F:D5:7B:B2:C0" onclick="abrirCubiculo(68,'EQ68')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ68</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ67" data-estado="1" data-mac="C8:D3:FF:B2:A5:13" onclick="abrirCubiculo(67,'EQ67')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ67</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ66" data-estado="0" onclick="abrirCubiculo(66,'EQ66')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ66</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="libre"></div>
+            </div>
+
+
+            <div class="fila">
+                <div class="libre"></div>
+                <div id="EQ15" data-estado="1" onclick="abrirCubiculo(15,'EQ15')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ15</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ14" data-estado="1" data-mac="4C:CC:6A:17:BE:C1" onclick="abrirCubiculo(14,'EQ14')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ14</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ13" data-estado="1" onclick="abrirCubiculo(13,'EQ13')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ13</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ12" data-estado="1" onclick="abrirCubiculo(12,'EQ12')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ12</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ11" data-estado="1" data-mac="40:B0:34:3D:99:18" onclick="abrirCubiculo(11,'EQ11')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ11</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div id="EQ65" data-estado="1" data-mac="DC:FE:07:D4:19:5D" onclick="abrirCubiculo(65,'EQ65')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ65</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ64" data-estado="1" data-mac="DC:FE:07:D4:1B:18" onclick="abrirCubiculo(64,'EQ64')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ64</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ63" data-estado="1" data-mac="40:B0:34:1C:EF:16" onclick="abrirCubiculo(63,'EQ63')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ63</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ62" data-estado="1" data-mac="C8:D3:FF:B2:A4:C9" onclick="abrirCubiculo(62,'EQ62')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ62</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ61" data-estado="1" data-mac="DC:FE:07:D4:89:C9" onclick="abrirCubiculo(61,'EQ61')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ61</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div id="EQ10" data-estado="1" onclick="abrirCubiculo(10,'EQ10')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ10</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ09" data-estado="1" onclick="abrirCubiculo(9,'EQ09')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ09</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ08" data-estado="1" onclick="abrirCubiculo(8,'EQ08')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ08</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ07" data-estado="1" data-mac="40:B0:34:1C:E9:44" onclick="abrirCubiculo(7,'EQ07')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ07</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ06" data-estado="1" data-mac="40:B0:34:3C:96:D3" onclick="abrirCubiculo(6,'EQ06')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ06</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div id="EQ60" data-estado="1" data-mac="DC:FE:07:D4:89:E9" onclick="abrirCubiculo(60,'EQ60')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ60</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ59" data-estado="1" data-mac="44:8A:5B:DF:D9:72" onclick="abrirCubiculo(59,'EQ59')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ59</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ58" data-estado="0" onclick="abrirCubiculo(58,'EQ58')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ58</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ57" data-estado="0" onclick="abrirCubiculo(57,'EQ57')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ57</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ56" data-estado="0" onclick="abrirCubiculo(56,'EQ56')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ56</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="silla"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div id="EQ05" data-estado="1" onclick="abrirCubiculo(5,'EQ05')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ05</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ04" data-estado="1" onclick="abrirCubiculo(4,'EQ04')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ04</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ03" data-estado="1" data-mac="C0:3F:D5:7B:B1:C8" onclick="abrirCubiculo(3,'EQ03')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ03</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ02" data-estado="1" data-mac="DC:FE:07:D4:8B:FE" onclick="abrirCubiculo(2,'EQ02')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ02</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ01" data-estado="1" data-mac="D0:27:88:8A:AD:96" onclick="abrirCubiculo(1,'EQ01')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ01</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div id="EQ55" data-estado="1" data-mac="D8:CB:8A:0C:D9:AA" onclick="abrirCubiculo(55,'EQ55')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ-55</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ54" data-estado="1" data-mac="DC:FE:07:D4:88:AF" onclick="abrirCubiculo(54,'EQ54')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ54</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ53" data-estado="1" data-mac="C0:3F:D5:7C:59:9A" onclick="abrirCubiculo(53,'EQ53')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ53</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ52" data-estado="1" data-mac="90:FB:A6:7A:D7:AA" onclick="abrirCubiculo(52,'EQ52')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ52</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ51" data-estado="1" data-mac="C0:3F:D5:7C:5A:27" onclick="abrirCubiculo(51,'EQ51')"
+                    class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ51</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div id="EQ50" data-estado="1" data-mac="C8:D3:FF:B6:D9:B1" onclick="abrirCubiculo(50,'EQ50')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ50</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ49" data-estado="1" onclick="abrirCubiculo(49,'EQ49')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ49</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ48" data-estado="1" onclick="abrirCubiculo(48,'EQ48')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ48</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ47" data-estado="1" onclick="abrirCubiculo(47,'EQ47')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ47</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div id="EQ46" data-estado="1" onclick="abrirCubiculo(46,'EQ46')" class="cubiculo">
+                    <div class="nombre-estado">
+                        <div style="font-size: 12px;">EQ46</div>
+                        <div class="estado" style="background-color: #B9B4C7;"></div>
+                    </div>
+                    <div id="ramBar" class="ram-bar">
+                        <div id="ramFill" class="ram-fill"></div>
+                    </div>
+                </div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="silla2"></div>
+                <div class="libre"></div>
+            </div>
+            <div class="fila">
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+                <div class="libre"></div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
